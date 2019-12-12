@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    tools:context="kr.go.seoul.apiair.login.LoginmainActivity">
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/correct_icon"
+        android:drawablePadding="10dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_alignStart="@+id/welcomeMessage" />
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/id_icon"
+        android:drawablePadding="10dip"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_below="@+id/idText"
+        android:layout_alignStart="@+id/idText"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:text="TextView"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="10dip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_below="@+id/passwordText"
+        android:layout_alignStart="@+id/idText"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/textView17"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나이"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_below="@+id/nameText"
+        android:layout_alignStart="@+id/idText"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:text="TextView"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_below="@+id/textView18"
+        android:layout_alignStart="@+id/textView16" />
+
+    <Button
+        android:id="@+id/modifiedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:layout_alignBaseline="@+id/modifiedButton"
+        android:layout_alignBottom="@+id/modifiedButton"
+        android:layout_toEndOf="@+id/modifiedButton"
+        android:layout_marginStart="35dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/colorGray"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원관리"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/colorPink"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_below="@+id/welcomeMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp" />
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.go.seoul.apiair">
+
+    <!-- 인터넷 퍼미션 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- 카카오 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/kakaolink_host"
+                    android:scheme="@string/kakao_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.FirstActivity" />
+        <activity
+            android:name=".location.DoBong"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.DongDae"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.DongJak"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.EunPyeong"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.GangBook"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.GummCheon"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.GangDong"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.GwangJin"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.GangNam"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.Guro"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.GangSeo"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.GwanAk"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.JoongGu"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.JongRo"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.JoongRang"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.Mapo"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.NoWon"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.SeongBook"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.SeoCho"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.SeongDong"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.SeoDae"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.SongPa"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.YangCheon"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.YeongDeung"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity
+            android:name=".location.YongSan"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity android:name=".mail.MailActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".login.RegisterActivity" />
+        <activity android:name=".login.ManagementActivity" />
+        <activity android:name=".login.LoginmainActivity" />
+
+        <!-- 카카오 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name=".activity.SupportActivity" />
+        <activity android:name=".activity.InformActivity"></activity>
+    </application>
+
+</manifest>

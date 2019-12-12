@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-80dp"
+        android:src="@drawable/couple" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:text="■ 기획 배경\n
+ ‘Day Date’는 서울에서 문화인이 되고자 하는 방문객들을 위해 서울시 대기정보를 제공하고 이를 통해 쾌적한 환경에서 즐길 수 있는 서울시 문화정보를 제공해 방문객들의 편의성을 올리는 것을 목표로 하여 기획하게 되었습니다.\n\n■ 기존 출시된 앱과의 차별성\n
+  기존에 비슷한 앱으로 ‘미세미세’와 ‘데이트팝’이 있는데, ‘미세미세’는 사용자의 위치를 받아오거나 지정된 특정 장소의 강수량, 오존 등 각종 대기정보를 한눈에 보여주는 앱이며, ‘데이트팝’은 서울의 특정 구 지역을 클릭하면 그 지역에 등록된 가게들을 홍보해주는 앱입니다. 저희 앱과 이 앱들의 차별성은 이 앱들의 장점들을 합하여 서울의 특정 구에 대한 미세먼지 정보와 문화정보를 실시간으로 업데이트 하여 보여준다는 점입니다.\n\n
+■ 데이터 활용\n
+① XML 파싱을 통한 대기정보 연동\n
+② 문화정보 API를 통한 문화정보 연동\n
+③ G-mail API를 통한 이메일 발송 기능 구현\n
+④ 카카오링크 API를 통한 카카오톡 공유 기능 구현\n
+⑤ DataBase 연동을 통한 회원 추가/수정/삭제 기능 구현 (카페24 사이트 활용)\n\n
+■ 개발자 정보\n
+한신대학교 컴퓨터공학부\n
+소프트 엔지니어링 연구소 소속(SE LAB)\n
+- 서현석(201358119) - 프론트 엔드 개발자\n
+- 송유찬(201358003) - 백 엔드 개발자\n
+- 김희정(201658001) - UX/UI 디자이너\n"
+                android:textColor="#000"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

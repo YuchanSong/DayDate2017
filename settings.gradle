@@ -1,0 +1,1 @@
+include ':app', ':airquality-release', ':culturalevents-release', ':activation', ':additionnal', ':mail'

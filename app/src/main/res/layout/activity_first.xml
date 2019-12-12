@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F8FF"
+        tools:context="kr.go.seoul.apiair.activity.FirstActivity">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:textSize="36dp"
+            android:textColor="#000000"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:text="로그인"
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/idText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back">
+
+            <TextView
+                    android:text="Green : 좋음"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notice_1"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#32CD32"/>
+                <TextView
+                    android:text="Orange : 보통"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/notice_2"
+                    android:textColor="#FFA500"/>
+                <TextView
+                    android:text="Red : 나쁨"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/notice_3"
+                    android:textColor="#FF0000"/>
+                <TextView
+                    android:text="Black : 점검 중"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="65dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/notice_4"
+                    android:textColor="#000000"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/seoul_map"
+                android:layout_marginTop="130dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/seoul_map" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_db"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="230dp"
+                    android:text="도봉"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_nw"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="240dp"
+                    android:text="노원"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_gb"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="260dp"
+                    android:text="강북"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_jr"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="305dp"
+                    android:layout_marginTop="305dp"
+                    android:text="중랑"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_sb"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="300dp"
+                    android:text="성북"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_ddm"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="263dp"
+                    android:layout_marginTop="325dp"
+                    android:text="동대문"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_jor"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="320dp"
+                    android:text="종로"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_gj"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="301dp"
+                    android:layout_marginTop="355dp"
+                    android:text="광진"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_ep"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="280dp"
+                    android:text="은평"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_sd"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="255dp"
+                    android:layout_marginTop="360dp"
+                    android:text="성동"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_jg"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="210dp"
+                    android:layout_marginTop="345dp"
+                    android:text="중구"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_sdm"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="153dp"
+                    android:layout_marginTop="325dp"
+                    android:text="서대문"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_mp"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="350dp"
+                    android:text="마포"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_gd"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="360dp"
+                    android:text="강동"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_sp"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="400dp"
+                    android:text="송파"
+                    android:textColor="#FFFFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_gn"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="420dp"
+                    android:text="강남"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_sc"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="420dp"
+                    android:text="서초"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_dj"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="410dp"
+                    android:text="동작"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_ydp"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="390dp"
+                    android:text="영등포"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_gw"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="450dp"
+                    android:text="관악"
+                    android:textColor="#FFFFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_gs"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="335dp"
+                    android:text="강서"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_yc"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="385dp"
+                    android:text="양천"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_gr"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="412dp"
+                    android:text="구로"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_gc"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="450dp"
+                    android:text="금천"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_ys"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="370dp"
+                    android:text="용산"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sub_inform1"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="580dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/renew"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="580dp"
+            android:textSize="18dp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-15dp"
+            android:layout_gravity="start"
+            android:orientation="vertical"
+            android:background="#F0F8FF">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logo2"
+                android:gravity="top"
+                android:layout_marginTop="-190dp"
+                android:layout_marginBottom="-195dp"
+                android:id="@+id/logo" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="불편/문의 사항 보내기"
+                android:layout_below="@+id/logo"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="10dip"
+                android:id="@+id/txt_mail"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="회원정보 수정"
+                android:layout_below="@+id/txt_mail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/management_icon"
+                android:drawablePadding="10dip"
+                android:id="@+id/txt_management" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="도움말"
+                android:layout_below="@+id/txt_management"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/support_icon"
+                android:drawablePadding="10dip"
+                android:id="@+id/txt_support"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="로그아웃"
+                android:layout_below="@+id/txt_support"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/logout_icon"
+                android:drawablePadding="10dip"
+                android:id="@+id/txt_logout" />
+
+        </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
